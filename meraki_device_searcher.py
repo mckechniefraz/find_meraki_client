@@ -40,7 +40,7 @@ def checkArg(args):
                         help="API Key for Meraki Dashboard")
     parser.add_argument("--o", metavar="Org ID", type=str,
                         help="Organisation ID for the Meraki Dashboard")
-    parser.add_argument("--i", metavar="Cleint IP", type=str,
+    parser.add_argument("--i", metavar="Client IP", type=str,
                         help="Client IP you are searching for")
 
     arguments = parser.parse_args()
