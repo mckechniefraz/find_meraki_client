@@ -10,14 +10,14 @@ git clone git@github.com:mckechniefraz/find_meraki_client.git
 ````
 Create virtual environment and install requirements
 ````
-python3 venv venv
+python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 ````
 ## Usage
 The script runs by accepting three arguments at run time, API Key, Org Id and the Client IP.
 ````
-python3 meraki_device_searcher.py --key=qwerty12345 --o=123456 --i=10.0.0.89 
+python3 meraki_device_searcher.py --k=qwerty12345 --o=123456 --i=10.0.0.89 
   networkName   clientIp   clientName   cleintMac           connectionType   firstSeen              lastSeen
 0 Test_Network  10.0.0.89  Test_device  aa:bb:cc:dd:ff:ff    Wireless        2021-07-11T11:42:23Z  2022-07-24T16:08:06Z
 ````
