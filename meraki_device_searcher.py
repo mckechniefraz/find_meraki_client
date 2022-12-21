@@ -3,6 +3,7 @@ import sys
 import meraki
 import pandas
 from IPython.display import display
+from tqdm import tqdm
 
 
 def merakiError(e):
@@ -117,7 +118,7 @@ if "__main__" == __name__:
     clientList = {"networkName": [], "clientIp": [],
                   "clientName": [], "cleintMac": [], "connectionType": [], "firstSeen": [], "lastSeen": [], }
 
-    for network in networkList:
+    for network in tqdm(networkList):
         clients = getNetworkClients(
             networkId=network["id"], clientIp=clientIp)
 
